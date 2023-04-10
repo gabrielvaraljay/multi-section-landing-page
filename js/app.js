@@ -38,6 +38,18 @@ const buildNav = () => {
 };
 buildNav();
 
+// Function to set the active navbar link
+const setActiveNavLink = () => {
+  for (const section of sections) {
+    const navLink = document.querySelector(`a[href="#${section.id}"]`);
+    if (isInViewport(section)) {
+      navLink.classList.add("active");
+    } else {
+      navLink.classList.remove("active");
+    }
+  }
+};
+
 // Add functionality to distinguish the section in view, changing the CSS as needed
 const setActiveSection = () => {
   for (const section of sections) {
