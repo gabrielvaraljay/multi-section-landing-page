@@ -7,16 +7,20 @@
   <title>AWS Load Balancers</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <!-- Load Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
   <script defer src="js/app.js"></script>
 </head>
 <body>
+  <body id="scrollspy-target" data-spy="scroll" data-target="#navbar__list"></body>
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
+      <ul id="navbar__list" class="nav"></ul>
     </nav>
   </header>
   <main>
@@ -94,5 +98,9 @@
   <footer class="page__footer">
     <p>&copy 2023 Gabriel Varaljay</p>
   </footer>
+  <!-- Add jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Add Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

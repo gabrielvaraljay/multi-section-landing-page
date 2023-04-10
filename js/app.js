@@ -9,12 +9,14 @@ const navList = document.getElementById("navbar__list");
  */
 const isInViewport = (section) => {
   const rect = section.getBoundingClientRect();
+  const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+
   return (
-    rect.top >= 0 &&
+    rect.top <= windowHeight * 0.5 &&
     rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.bottom >= windowHeight * 0.5 &&
+    rect.right <= windowWidth
   );
 };
 
@@ -75,5 +77,8 @@ navList.addEventListener("click", (event) => {
  */
 
 // Set sections as active while scrolling
-document.addEventListener("scroll", setActiveSection);
+document.addEventListener("scroll", () => {
+  setActiveSection();
+  setActiveNavLink();
+});
 
