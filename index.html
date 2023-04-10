@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+  <script defer src="js/app.js"></script>
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
@@ -20,40 +21,78 @@
   </header>
   <main>
     <header class="main__hero">
-      <h1>Landing Page </h1>
+      <h1>AWS Load Balancers </h1>
     </header>
     <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
+    <section id="section1" data-nav="Classic Load Balancer" class="your-active-class">
       <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Classic Load Balancer</h2>
+        <p>The Classic Load Balancer is a key component of Amazon Web Services (AWS) that provides reliable and scalable load balancing solutions to applications. The Classic Load Balancer is designed to distribute incoming traffic across multiple instances of an application, ensuring that no single instance is overwhelmed. This enables the application to operate efficiently and reliably even during peak periods of usage.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <p>One of the main advantages of the Classic Load Balancer is its ability to automatically detect unhealthy instances and redirect traffic to healthy ones. This ensures that user requests are always directed to the most efficient and available instance of the application.</p>
+        
+        <p>The Classic Load Balancer provides several routing algorithms that allow the distribution of traffic based on the specific needs of the application. These algorithms include round-robin, least outstanding requests, and IP hash, among others.</p>
+        
+        <p>Furthermore, the Classic Load Balancer provides a range of features such as SSL offloading, connection draining, and sticky sessions that ensure optimal performance and reliability of applications.</p>
+        
+        <p>In summary, the Classic Load Balancer is an essential tool for anyone looking to optimize the performance and reliability of their applications in AWS. With its scalable and efficient load balancing solutions, the Classic Load Balancer is an excellent choice for anyone looking to ensure that their applications can handle high levels of traffic and usage.</p>        
+      </p>
       </div>
     </section>
-    <section id="section2" data-nav="Section 2">
+    <section id="section2" data-nav="Application Load Balancer">
       <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Application Load Balancer</h2>
+        <p>The Application Load Balancer is a powerful tool provided by Amazon Web Services (AWS) that enables the distribution of incoming traffic to multiple targets, such as EC2 instances, containers, and IP addresses. The Application Load Balancer is designed to provide high availability, fault tolerance, and scalability to applications by ensuring that traffic is evenly distributed across healthy targets.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <p>One of the key features of the Application Load Balancer is its support for path-based routing, which enables the distribution of traffic based on the URL path requested by the client. This allows for more granular control over how traffic is distributed and enables the creation of more complex application architectures.</p>
+
+        <p>The Application Load Balancer also supports content-based routing, which enables the distribution of traffic based on the content of the request. This feature is particularly useful for microservices architectures, where requests may be directed to different services based on the type of request or the content being requested.</p>
+
+        <p>In addition to these features, the Application Load Balancer also provides a range of other features, such as SSL termination, cross-zone load balancing, and health checks, which ensure the optimal performance and reliability of applications.</p>
+
+        <p>Overall, the Application Load Balancer is an excellent tool for anyone looking to optimize the performance and reliability of their applications in AWS. With its powerful routing capabilities and robust feature set, the Application Load Balancer is a great choice for anyone looking to build complex and scalable architectures in the cloud.</p>
+
+            </p>
       </div>
     </section>
-    <section id="section3" data-nav="Section 3">
+    <section id="section3" data-nav="Network Load Balancer">
       <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Network Load Balancer</h2>
+        <p>The Network Load Balancer is a high-performance tool provided by Amazon Web Services (AWS) that enables the distribution of incoming traffic to multiple targets, such as EC2 instances, containers, and IP addresses. The Network Load Balancer is designed to provide ultra-low latency, high throughput, and connection-based routing to applications, making it an ideal choice for applications that require high levels of network performance.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <p>One of the key features of the Network Load Balancer is its support for Transport Layer Security (TLS) termination, which enables the offloading of SSL/TLS decryption to the load balancer. This helps to reduce the workload on the backend targets and improve the overall performance of the application.</p>
+        
+        <p>The Network Load Balancer also supports connection-based routing, which enables the distribution of traffic based on the IP protocol data unit (PDU) headers, such as source IP address, destination IP address, source port, and destination port. This feature is particularly useful for applications that require advanced network routing capabilities and high levels of performance.</p>
+        
+        <p>In addition to these features, the Network Load Balancer also provides a range of other features, such as cross-zone load balancing, health checks, and support for IPv6 traffic, which ensure the optimal performance and reliability of applications.</p>
+        
+        <p>Overall, the Network Load Balancer is an excellent tool for anyone looking to optimize the performance and reliability of their applications in AWS. With its high-performance routing capabilities and robust feature set, the Network Load Balancer is a great choice for anyone looking to build complex and scalable network architectures in the cloud.</p>
+        
+            </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="AWS">
+      <div class="landing__container">
+        <h2>AWS</h2>
+        <p>Amazon Web Services (AWS) is a cloud computing platform that provides a wide range of services, including computing, storage, networking, and databases, among others. AWS enables businesses and organizations of all sizes to quickly and easily provision computing resources without the need for upfront capital investment.</p>
+
+        <p>One of the key advantages of AWS is its scalability. With AWS, businesses can quickly scale up or down their computing resources based on their needs, without having to worry about the costs associated with traditional IT infrastructure. This enables businesses to be more agile and responsive to changing market conditions.</p>
+
+        <p>Another advantage of AWS is its reliability. AWS provides a highly available and fault-tolerant infrastructure, which ensures that applications and services are always accessible and performant. This is achieved through the use of multiple data centers, redundant networking, and automatic failover mechanisms.</p>
+
+        <p>Furthermore, AWS provides a wide range of tools and services that enable businesses to build and deploy applications quickly and easily. These tools include services such as Elastic Beanstalk, which enables developers to deploy and manage applications without having to worry about the underlying infrastructure.</p>
+
+        <p>Overall, AWS is a powerful platform that provides businesses with the tools and resources they need to build and deploy applications quickly and efficiently. With its scalability, reliability, and robust feature set, AWS is an excellent choice for anyone looking to build and grow their business in the cloud.</p>
+
+        </p>
       </div>
     </section>
   </main>
   <footer class="page__footer">
-    <p>&copy Udacity</p>
+    <p>&copy 2023 Gabriel Varaljay</p>
   </footer>
-
 </body>
 </html>
